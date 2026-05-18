@@ -9,20 +9,20 @@ import '../assets/css/Home_Experience.css';
 const experienceData = {
     experiences: [
         {
-            title: "Junior Web Developer",
+            title: "Junior Developer",
             company: "INFIVITY Labs",
             location: "Damak, Nepal",
             period: "2026 – present",
             description: "Role as developer and mentor. From system designing to building optimized system like LMS, attendance system, catalog ecommerce site, etc.",
-            technologies: ["HTML/CSS", "React JS", "Django", "Django Rest Framework", "MySql"]
+            technologies: ["HTML/CSS", "React JS", "Django", "Django Rest Framework", "MySql", "github"]
         },
         {
             title: "Learning Phase",
             company: "Self Learing",
-            location: "Damak, Nepal",
+            location: "Nepal",
             period: "2021 – present",
             description: "Build projects like BCT License prep, CodeVora UI, InternHUB, etc..",
-            technologies: ["HTML/CSS", "React JS", "Django", "Django Rest Framework", "MySql", "C++"]
+            technologies: ["HTML/CSS", "github", "React JS", "Django", "Django Rest Framework", "MySql", "C++"]
         }
     ],
     education: [
