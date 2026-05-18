@@ -1,0 +1,230 @@
+/* src/home/assets/css/Home_Experience.css */
+
+/* ========== EXPERIENCE SECTION - THEME AWARE ========== */
+.experience-section {
+    position: relative;
+    padding: 4rem 2rem 6rem;
+    background: transparent;
+}
+
+.experience-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.experience-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Two column grid */
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Column headers */
+.exp-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.header-icon {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.exp-header h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    padding-left: 1.65rem;
+}
+
+/* Vertical line between timeline cards */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+/* Individual timeline card */
+.timeline-card {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -1.5rem;
+    top: 1rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.2);
+    z-index: 1;
+}
+
+.timeline-dot.edu-dot {
+    background: var(--text-tertiary);
+}
+
+.timeline-content {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+    transition: transform 0.2s;
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    border-color: var(--accent-color);
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+}
+
+.timeline-meta .company,
+.timeline-meta .institution {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.timeline-meta .location,
+.timeline-meta .period {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.meta-sep {
+    color: var(--border-color);
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+}
+
+/* Technology badges */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tech-badge {
+    background: rgba(255, 140, 0, 0.1);
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    border-radius: 20px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+/* Achievements list */
+.achievements-list {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style: none;
+}
+
+.achievements-list li {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .experience-section {
+        padding: 3rem 1.5rem 4rem;
+    }
+    .experience-title {
+        font-size: 2rem;
+    }
+    .timeline::before {
+        left: 7px;
+    }
+    .timeline-dot {
+        left: -1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-section {
+        padding: 2rem 1rem 3rem;
+    }
+    .timeline {
+        padding-left: 1.25rem;
+    }
+    .timeline::before {
+        left: 4px;
+    }
+    .timeline-dot {
+        left: -1.2rem;
+        width: 10px;
+        height: 10px;
+    }
+    .timeline-content {
+        padding: 1rem;
+    }
+    .timeline-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    .meta-sep {
+        display: none;
+    }
+    .exp-header h3 {
+        font-size: 1.3rem;
+    }
+}

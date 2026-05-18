@@ -1,0 +1,65 @@
+/* src/home/assets/css/Home.css */
+.home-page {
+    position: relative;
+    background: var(--bg-color);
+    overflow-x: hidden;
+}
+
+/* ========== GLOBAL BACKGROUND SHAPES ========== */
+.home-bg-shapes {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent-color);
+    top: -150px;
+    right: -100px;
+    animation: float 15s infinite alternate ease-in-out;
+}
+
+.shape-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-color);
+    top: 40%;
+    left: -150px;
+    opacity: 0.2;
+    animation: float 20s infinite alternate-reverse ease-in-out;
+}
+
+.shape-3 {
+    width: 450px;
+    height: 450px;
+    background: var(--accent-color);
+    bottom: -150px;
+    right: -100px;
+    animation: float 18s infinite alternate ease-in-out;
+}
+
+.shape-4 {
+    width: 350px;
+    height: 350px;
+    background: var(--accent-color);
+    bottom: 20%;
+    left: -80px;
+    opacity: 0.25;
+    animation: float 22s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(25px, 35px) rotate(8deg); }
+}

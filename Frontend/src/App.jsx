@@ -1,0 +1,56 @@
+import { useEffect, useState } from 'react';
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Home_Route } from './home/Home_Import';
+import Navbar from './components/Navbar';
+
+function App() {
+    // Load saved theme or default to 'system'
+    const [theme, setTheme] = useState(() => {
+        const saved = localStorage.getItem('theme');
+        return saved && ['light', 'dark', 'system'].includes(saved) ? saved : 'system';
+    });
+
+    // Apply the actual theme to <body>
+    useEffect(() => {
+        const applyTheme = () => {
+            let resolved = theme;
+            if (theme === 'system') {
+                resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            document.body.className = resolved; // body class becomes 'light' or 'dark'
+        };
+
+        applyTheme();
+
+        // Listen for system preference changes only when in system mode
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = () => {
+            if (theme === 'system') applyTheme();
+        };
+        mediaQuery.addEventListener('change', handleChange);
+        return () => mediaQuery.removeEventListener('change', handleChange);
+    }, [theme]);
+
+    // Save theme preference to localStorage
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
+    const toggleTheme = (newTheme) => {
+        setTheme(newTheme);
+    };
+    
+
+    return (
+        <BrowserRouter>
+            <Navbar currentTheme={theme} onThemeChange={toggleTheme} />
+            <Routes>
+                <Route path="/*" element={<Home_Route />} />
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+export default App;

@@ -1,0 +1,306 @@
+/* src/home/assets/css/Home_Hero.css */
+
+/* ========== HERO SECTION ========== */
+.hero {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    background: transparent;     /* inherits from .home-page */
+    padding: 7rem 2rem 6rem;
+    overflow-x: hidden;
+}
+
+
+/* ========== BACKGROUND DECORATIVE SHAPES ========== */
+.hero-bg-shapes {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: var(--accent-color);
+    top: -150px;
+    right: -100px;
+    animation: float 15s infinite alternate ease-in-out;
+}
+
+.shape-2 {
+    width: 500px;
+    height: 500px;
+    background: var(--accent-color);
+    bottom: -200px;
+    left: -150px;
+    opacity: 0.2;
+    animation: float 20s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate(30px, 50px) rotate(10deg);
+    }
+}
+
+
+/* ========== CONTAINER ========== */
+.hero-container {
+    position: relative;
+    z-index: 2;
+    max-width: var(--container-max-width, 1300px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+/* ========== LEFT CONTENT ========== */
+.hero-content {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.hero-greeting {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.hero-name {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+}
+
+.hero-title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.hero-title-prefix {
+    color: var(--text-tertiary);
+}
+
+/* Typing effect custom styling (applied to the component) */
+.hero-title-wrapper span:last-child {
+    font-weight: 600;
+    color: var(--accent-color);
+    border-right: 2px solid var(--accent-color);
+    padding-right: 6px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-tertiary);
+    max-width: 550px;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+/* ========== BUTTONS ========== */
+.hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+    /* flex-wrap: wrap; */
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: transparent;
+    font-size: 1rem;
+    border: none;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    filter: brightness(1.05);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1.5px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-3px);
+    background: rgba(var(--accent-color-rgb, 255, 140, 0), 0.05);
+}
+
+/* ========== SOCIAL LINKS ========== */
+.social-links {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* ========== AVATAR / PROFILE IMAGE ========== */
+.hero-avatar {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-wrapper {
+    position: relative;
+    width: 340px;
+    height: 340px;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.3);
+    border: 3px solid var(--accent-color);
+    transition: transform 0.4s ease;
+}
+
+.avatar-img:hover {
+    transform: scale(1.02);
+}
+
+.avatar-ring {
+    position: absolute;
+    inset: -12px;
+    border-radius: 50%;
+    border: 2px dashed var(--accent-color);
+    opacity: 0.6;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 900px) {
+    .hero {
+        padding: 5rem 1rem;
+    }
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2.5rem;
+    }
+    .hero-name {
+        font-size: 3rem;
+    }
+    .hero-title-wrapper {
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .avatar-wrapper {
+        width: 260px;
+        height: 260px;
+    }
+    .shape-1,
+    .shape-2 {
+        opacity: 0.15;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 4rem 0.7rem;
+    }
+    .hero-name {
+        font-size: 2.4rem;
+    }
+    .hero-title-wrapper {
+        font-size: 1.1rem;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    .btn {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+    }
+    .avatar-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    .social-links {
+        gap: 1rem;
+    }
+    .social-links a {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,234 @@
+/* ========== SECTION – NO CARD BACKGROUND ========== */
+.git-section {
+    /* position: relative; */
+    padding: 2rem 2rem 6rem;
+    background: transparent; /* inherits from .home-page */
+    overflow-x: hidden;
+}
+
+.git-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ========== TERMINAL HEADER (like a code editor) ========== */
+.git-terminal-header {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 24px 24px 0 0;
+}
+
+.git-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.git-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.git-dot.red { background: #ff5f56; }
+.git-dot.yellow { background: #ffbd2e; }
+.git-dot.green { background: #27c93f; }
+
+.git-id {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+}
+
+/* ========== SCROLLABLE CONTENT ========== */
+.git-scroll-container {
+    padding: 2rem 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--border-color);
+    background: transparent;
+}
+
+.git-scroll-container::-webkit-scrollbar {
+    height: 6px;
+}
+.git-scroll-container::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 10px;
+}
+.git-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+.git-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: var(--text-tertiary);
+}
+
+/* Auto‑hide scrollbar on mobile */
+@media (max-width: 1023px) {
+    .git-scroll-container {
+        scrollbar-width: none;
+    }
+    .git-scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+    .git-scroll-container.is-scrolling {
+        scrollbar-width: thin;
+    }
+    .git-scroll-container.is-scrolling::-webkit-scrollbar {
+        display: block;
+    }
+}
+
+/* ========== HEADER INSIDE SCROLLABLE AREA ========== */
+.git-header-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.git-user-block {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.git-icon-neon {
+    font-size: 2rem;
+    color: var(--accent-color);
+    filter: drop-shadow(0 0 3px var(--accent-color));
+}
+
+.git-project-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+}
+
+.git-year-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+}
+
+.history-icon {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.year-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.year-btn:hover {
+    color: var(--accent-color);
+    background: rgba(255, 140, 0, 0.1);
+}
+
+.year-btn.active {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== CALENDAR WRAPPER ========== */
+.calendar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.calendar-wrapper :is(.react-calendar-heatmap text, .react-calendar-heatmap .month-label) {
+    fill: var(--text-secondary);
+    font-size: 12px;
+}
+
+/* ========== TOOLTIP (same as hero's accent) ========== */
+.matrix-tooltip {
+    background: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--accent-color) !important;
+    border-radius: 12px !important;
+    font-size: 0.8rem !important;
+    padding: 0.5rem 1rem !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(4px);
+}
+
+/* ========== TERMINAL PROMPT ========== */
+.git-terminal-prompt {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.blink {
+    animation: blink-animation 1s step-end infinite;
+}
+
+@keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .git-section {
+        padding: 2rem 0.5rem 4rem;
+    }
+    .git-terminal-header { border-radius: 10px 10px 0 0; }
+    .git-year-selector { gap: 0.8rem; border-radius: 15px; }
+    .git-header-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .git-year-selector {
+        justify-content: center;
+    }
+    .git-terminal-prompt {
+        font-size: 0.7rem;
+    }
+    .git-id {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .git-scroll-container {
+        padding: 1rem;
+    }
+    .year-btn {
+        padding: 0.2rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
