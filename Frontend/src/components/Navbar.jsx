@@ -57,6 +57,7 @@ const Navbar = ({ currentTheme, onThemeChange }) => {
                     <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
                         <button className="nav-link" onClick={(e) => handleNavClick(e, 'home-hero')}>Home</button>
                         <button className="nav-link" onClick={(e) => handleNavClick(e, 'about')}>About</button>
+                        <button className="nav-link" onClick={(e) => handleNavClick(e, 'experience')}>Journey</button>
                         <button className="nav-link" onClick={(e) => handleNavClick(e, 'skills')}>Skills</button>
                         <button className="nav-link" onClick={(e) => handleNavClick(e, 'projects')}>Projects</button>
                         <button className="nav-link" onClick={(e) => handleNavClick(e, 'contact')}>Contact</button>
