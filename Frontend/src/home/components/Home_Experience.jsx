@@ -17,6 +17,14 @@ const experienceData = {
             technologies: ["HTML/CSS", "React JS", "Django", "Django Rest Framework", "MySql", "github"]
         },
         {
+            title: "Intern",
+            company: "INFIVITY Labs",
+            location: "Damak, Nepal",
+            period: "2026 Jan15 – 2026 Apr15",
+            description: "Intern for 3 months. Learn how to work as a team in github in professional environment.",
+            technologies: ["React JS", "Django", "Django Rest Framework", "MySql", "github"]
+        },
+        {
             title: "Learning Phase",
             company: "Self Learing",
             location: "Nepal",
