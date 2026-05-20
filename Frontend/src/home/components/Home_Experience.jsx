@@ -30,7 +30,7 @@ const experienceData = {
             location: "Nepal",
             period: "2021 – present",
             description: "Build projects like BCT License prep, CodeVora UI, InternHUB, etc..",
-            technologies: ["HTML/CSS", "github", "React JS", "Django", "Django Rest Framework", "MySql", "C++"]
+            technologies: ["Problem Solving", "Data Structure & Algorithms", "HTML/CSS", "github", "React JS", "Django", "Django Rest Framework", "MySql", "C++"]
         }
     ],
     education: [
