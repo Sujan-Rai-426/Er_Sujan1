@@ -68,7 +68,7 @@ const Home_Experience = () => {
                 </Reveal>
 
                 <div className="experience-grid">
-                    {/* Work Experience Column */}
+{/*********************** Work Experience Column ***********************/}
                     <div className="exp-column">
                         <Reveal direction="left" delay="0.2s">
                             <div className="exp-header">
@@ -103,9 +103,10 @@ const Home_Experience = () => {
                                 </Reveal>
                             ))}
                         </div>
+                        <div className="smoky-overlay"></div>
                     </div>
 
-                    {/* Education Column */}
+{/*********************** Education Column ***********************/}
                     <div className="edu-column">
                         <Reveal direction="right" delay="0.2s">
                             <div className="exp-header">
@@ -140,6 +141,7 @@ const Home_Experience = () => {
                                 </Reveal>
                             ))}
                         </div>
+                        <div className="smoky-overlay"></div>
                     </div>
                 </div>
             </div>

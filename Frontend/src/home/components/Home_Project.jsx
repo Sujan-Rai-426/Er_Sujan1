@@ -65,7 +65,7 @@ const projectsData = {
             category: ["React", "django", "UI/UX"],
             image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1766928307/Er_Sujan/Project/lid9g4rj3oulrjyukuiv.png",
             description: "Website to help developer get free animated UI Components, prebuilt Templates, React Libraries.",
-            tech: ["React JS", "Bootstrap", "vercel", "github", "PostgreSQL", "DRF"],
+            tech: ["React JS", "vercel", "github", "PostgreSQL", "DRF"],
             liveLink: "https://codevora140.vercel.app/",
             githubLink: "https://github.com/Sujan-Rai-426/CodeVora/"
         },
@@ -74,8 +74,8 @@ const projectsData = {
             title: "INFIVITY Store",
             category: ["React", "django"],
             image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1772272488/Er_Sujan/Project/mfa5kmyy59my4nda8jwn.png",
-            description: "Full‑featured admin dashboard with product management, order tracking, and analytics chartsProduct Catalog website to showcase product with frontend custom admin dashboard.",
-            tech: ["React JS", "github", "DRF", "MySQL", "django"],
+            description: "Full‑featured admin dashboard with product management and Product Catalog website to showcase product.",
+            tech: ["React JS", "github", "DRF", "MySQL", "django", "cloudinary", "cpanel"],
             liveLink: "https://infivity.com.np",
             githubLink: "https://github.com/INFIVITY"
         },
@@ -85,8 +85,18 @@ const projectsData = {
             category: ["React", "django"],
             image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1773394211/Er_Sujan/Project/aewppcvbf0zzsoquoz2i.png",
             description: "Official Infivity Labs website with staff attendance track using GPS including checkin and checkout time.",
-            tech: ["React JS", "Bootstrap", "github", "DRF", "JavaScript", "MySQL", "django"],
+            tech: ["React JS", "Bootstrap", "github", "DRF", "JavaScript", "MySQL", "django", "cloudinary", "cpanel"],
             liveLink: "https://infivitylabs.com",
+            githubLink: "https://github.com/INFIVITY"
+        },
+        {
+            id: 8,
+            title: "INFIVITY LMS",
+            category: ["React", "django"],
+            image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1779705961/lms_s6xppu.png",
+            description: "LMS with interactive learning modules, content, quizzes and progress tracking.",
+            tech: ["React JS", "github", "DRF", "JavaScript", "MySQL", "django", "cpanel"],
+            liveLink: "https://lms.infivitylabs.com",
             githubLink: "https://github.com/INFIVITY"
         }
     ]

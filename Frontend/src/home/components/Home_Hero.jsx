@@ -8,7 +8,7 @@ import '../assets/css/Home_Hero.css';
 
 // Optional: profile image (replace with your actual image)
 import profileImg from '../assets/img/profile.jpg'; // or use a placeholder
-import { FaEnvelope, FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaHandPaper, FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane, FaPhone, FaYoutube } from 'react-icons/fa';
 
 const Home_Hero = () => {
   const location = useLocation();
@@ -29,7 +29,9 @@ const Home_Hero = () => {
         {/* LEFT CONTENT */}
         <div className="hero-content">
           <Reveal direction="left" delay="0.1s">
-            <p className="hero-greeting">👋 Hello, I'm</p>
+              <p className="hero-greeting">
+                  <span className="waving-hand"><FaHandPaper /></span> Hello, I'm
+              </p>
           </Reveal>
 
           <Reveal direction="left" delay="0.2s">
@@ -66,7 +68,7 @@ const Home_Hero = () => {
                 className="btn btn-primary"
                 onClick={(e) => handleScroll(e, 'contact')}
               >
-                  Contact
+                  <FaPaperPlane/> Contact
               </button>
               <button
                 className="btn btn-secondary"

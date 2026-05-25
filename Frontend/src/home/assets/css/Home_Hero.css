@@ -69,17 +69,38 @@
 }
 
 /* ========== LEFT CONTENT ========== */
-.hero-content {
+/* .hero-content {
     flex: 1.2;
     min-width: 300px;
+} */
+
+/* Shaking hand animation for FaHandWave icon */
+@keyframes shakeHand {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-12deg); }
+    60% { transform: rotate(8deg); }
+    80% { transform: rotate(-4deg); }
+}
+
+.waving-hand {
+    display: inline-block;
+    animation: shakeHand 1.2s ease-in-out infinite;
+    transform-origin: 70% 70%;
+    margin-right: 0.3rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 .hero-greeting {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--accent-color);
-    margin-bottom: 0.75rem;
-    letter-spacing: 1px;
-    font-weight: 500;
+    margin-bottom: 0.55rem;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
 
 .hero-name {
@@ -242,6 +263,9 @@
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 900px) {
+    .hero-greeting {
+        justify-content: center;
+    }
     .hero {
         padding: 5rem 1rem;
     }

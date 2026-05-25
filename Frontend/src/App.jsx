@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Home_Route } from './home/Home_Import';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
     // Load saved theme or default to 'system'
@@ -45,10 +46,15 @@ function App() {
 
     return (
         <BrowserRouter>
+
             <Navbar currentTheme={theme} onThemeChange={toggleTheme} />
+
             <Routes>
                 <Route path="/*" element={<Home_Route />} />
             </Routes>
+
+            <Footer />
+            
         </BrowserRouter>
     );
 }

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Reveal from '../../utils/Reveal';
-import { FaCode, FaDatabase, FaTools, FaCloud, FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaFigma, FaCpanel } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaTools, FaCloud, FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaFigma, FaCpanel, FaNetworkWired } from 'react-icons/fa';
 import { SiTailwindcss, SiRedux, SiMongodb, SiExpress, SiNodedotjs, SiBootstrap, SiDjango, SiPostgresql, SiMysql, SiPython, SiCloudinary, SiRender } from 'react-icons/si';
 import '../assets/css/Home_Skill.css';
 
@@ -11,34 +11,35 @@ const skillsData = {
     categories: [
         {
             name: "Frontend Development",
-            icon: <FaCode />,
+            icon: <FaCode color="#61dafb" />,
             skills: [
-                { name: "React JS", level: 80, icon: <FaReact /> },
-                { name: "JavaScript/ES6", level: 68, icon: <FaJs /> },
-                { name: "HTML5", level: 85, icon: <FaHtml5 /> },
-                { name: "CSS3", level: 85, icon: <FaCss3Alt /> },
-                { name: "Bootstrap", level: 92, icon: <SiBootstrap /> },
+                { name: "React JS", level: 80, icon: <FaReact color="#61dafb" /> },
+                { name: "JavaScript/ES6", level: 68, icon: <FaJs color="#f7df1e" /> },
+                { name: "HTML5", level: 85, icon: <FaHtml5 color="#e34f26" /> },
+                { name: "CSS3", level: 85, icon: <FaCss3Alt color="#1572b6" /> },
+                { name: "Bootstrap", level: 92, icon: <SiBootstrap color="#7952b3" /> },
             ]
         },
         {
             name: "Backend & Database",
-            icon: <FaDatabase />,
+            icon: <FaDatabase color="#336791" />,
             skills: [
-                { name: "Python", level: 75, icon: <SiPython /> },
-                { name: "Django", level: 75, icon: <SiDjango /> },
-                { name: "PostgreSQL", level: 70, icon: <SiPostgresql /> },
-                { name: "MySQL", level: 65, icon: <SiMysql /> }
+                { name: "Python", level: 75, icon: <SiPython color="#3776ab" /> },
+                { name: "Django", level: 75, icon: <SiDjango color="#092e20" /> },
+                { name: "Django REST Framework", level: 70, icon: <FaNetworkWired color="#a30000" /> },
+                { name: "PostgreSQL", level: 70, icon: <SiPostgresql color="#4169e1" /> },
+                { name: "MySQL", level: 65, icon: <SiMysql color="#4479a1" /> }
             ]
         },
         {
             name: "Tools & Others",
-            icon: <FaTools />,
+            icon: <FaTools color="#ff8c00" />,
             skills: [
-                { name: "Git/GitHub", level: 85, icon: <FaGitAlt /> },
-                { name: "Cpanel", level: 75, icon: <FaCpanel /> },
-                { name: "Render", level: 80, icon: <SiRender /> },
-                { name: "VS Code", level: 90, icon: <FaCode /> },
-                { name: "Cloudinary", level: 75, icon: <SiCloudinary /> }
+                { name: "Git/GitHub", level: 85, icon: <FaGitAlt color="#f05032" /> },
+                { name: "Cpanel", level: 75, icon: <FaCpanel color="#ff6c2c" /> },
+                { name: "Render", level: 80, icon: <SiRender color="#46e3b7" /> },
+                { name: "VS Code", level: 90, icon: <FaCode color="#007acc" /> },
+                { name: "Cloudinary", level: 75, icon: <SiCloudinary color="#3448c5" /> }
             ]
         }
     ]
