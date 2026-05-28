@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home_Route } from './home/Home_Import';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import BgStars from './utils/BgStars';
 
 function App() {
     // Load saved theme or default to 'system'
@@ -105,6 +106,7 @@ function App() {
 
     return (
         <BrowserRouter>
+            <BgStars />
 
             <Navbar currentTheme={theme} onThemeChange={toggleTheme} />
 

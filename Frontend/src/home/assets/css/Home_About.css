@@ -1,6 +1,6 @@
 /* ========== ABOUT SECTION - THEME AWARE ========== */
 .about-section {
-    position: relative;
+    /* position: relative; */
     padding: 4rem 2rem 6rem;
     background: transparent;
 }
@@ -18,8 +18,8 @@
     margin-bottom: 2.5rem;
     text-align: center;
     background: linear-gradient(135deg, var(--text-primary), var(--accent-color));
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
