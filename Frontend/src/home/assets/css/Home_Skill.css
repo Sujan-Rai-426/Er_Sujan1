@@ -123,6 +123,13 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .skill-category {
+        border-radius: 10px;
+        padding: 1rem;
+    }
+    .skills-list {
+        gap: 1rem;
+    }
     .skills-section {
         padding: 3rem 1.5rem 4rem;
     }
@@ -147,7 +154,12 @@
     }
     .skill-name {
         flex: auto;
+        font-size: 0.8rem;
         width: calc(100% - 70px);
+    }
+    .skill-icon{
+        font-size: 0.9rem;
+        width: 20px;
     }
     .skill-percent {
         width: auto;

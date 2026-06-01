@@ -55,7 +55,7 @@ const Home_Skill = () => {
 
                 <div className="skills-grid">
                     {skillsData.categories.map((category, catIdx) => (
-                        <Reveal key={catIdx} direction="up" delay={0.2 + catIdx * 0.1}>
+                        <Reveal key={catIdx} direction="up" delay={0.1 + catIdx * 0.1}>
                             <div className="skill-category">
                                 <div className="category-header">
                                     <span className="category-icon">{category.icon}</span>

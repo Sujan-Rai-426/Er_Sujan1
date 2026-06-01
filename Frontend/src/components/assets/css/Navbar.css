@@ -38,8 +38,8 @@
 
 /* Theme toggle button – always visible, now on left */
 .theme-toggle-btn {
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
+    background: transparent;
+    border: none;
     color: var(--text-secondary);
     padding: 0.5rem;
     border-radius: 40px;
@@ -51,7 +51,7 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .theme-toggle-btn:hover {
@@ -113,7 +113,7 @@
         backdrop-filter: blur(12px);
         flex-direction: column;
         align-items: stretch;
-        gap: 0;
+        gap: 1rem;
         padding: 1rem 0;
         border-bottom: 1px solid var(--border-color);
         transform: translateY(-150%);
@@ -132,8 +132,8 @@
 
     /* Keep theme button visible and on left */
     .theme-toggle-btn {
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
         padding: 0;
     }
 }

@@ -46,7 +46,7 @@ const Navbar = ({ currentTheme, onThemeChange }) => {
             <div className="nav-container">
                 {/* Left group: Logo + Theme Toggle */}
                 <div className="nav-left">
-                    <div className="logo">Er. Sujan Rai</div>
+                    <div onClick={() => {window.scrollTo({top:0, behavior: 'smooth'})}} className="logo">Er. Sujan Rai</div>
                     <button className="theme-toggle-btn" onClick={handleToggle}>
                         {icon} {label}
                     </button>

@@ -174,7 +174,7 @@ const Home_Project = () => {
                     <h2 className="projects-title">Featured Projects</h2>
                 </Reveal>
 
-                <Reveal direction="up" delay="0.2s">
+                <Reveal direction="up" delay="0.11s">
                     <div className="project-filters">
                         {categoriesList.map((cat, idx) => (
                             <button
@@ -190,7 +190,7 @@ const Home_Project = () => {
 
                 <div className="projects-grid">
                     {displayedProjects.map((project, idx) => (
-                        <Reveal key={project.id} direction="up" delay={0.2 + idx * 0.1}>
+                        <Reveal key={project.id} direction="up" delay={0.1 + idx * 0.1}>
                             <div className="project-card">
                                 <div className="project-image">
                                     <img src={project.image} alt={project.title} />

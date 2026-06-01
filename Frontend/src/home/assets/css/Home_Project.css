@@ -173,6 +173,14 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .project-info {
+        padding: 0.9rem;
+    }
+    .tech-tag {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.65rem;
+        gap: 0.4rem;
+    }
     .projects-section {
         padding: 3rem 1.5rem 4rem;
     }

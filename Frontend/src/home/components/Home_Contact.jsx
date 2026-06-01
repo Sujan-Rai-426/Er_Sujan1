@@ -79,7 +79,7 @@ const Home_Contact = () => {
                 <div className="contact-grid">
                     {/* Left: Contact Info */}
                     <div className="contact-info">
-                        <Reveal direction="left" delay="0.2s">
+                        <Reveal direction="left" delay="0.11s">
                             <div className="info-card">
                                 <h3>Let's talk</h3>
                                 <p>Have a project in mind? I'd love to hear from you.</p>

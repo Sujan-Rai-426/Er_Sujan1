@@ -55,7 +55,7 @@ a {
 /* ====================
     Global Styles
    ==================== */
-/* Background stars canvas - ensures it doesn't interfere with clicks */
+/* Background stars canvas */
 .bg-stars-canvas {
     position: fixed;
     top: 0;
@@ -64,6 +64,18 @@ a {
     height: 100%;
     pointer-events: none;
     z-index: 1;
+    /* Ensure canvas renders properly on all devices */
+    display: block;
+}
+
+/* Light theme specific canvas adjustments */
+body.light .bg-stars-canvas {
+    opacity: 0.8;
+}
+
+/* Dark theme specific canvas adjustments */
+body.dark .bg-stars-canvas {
+    opacity: 1;
 }
 
 /* Ensure all content sits above the canvas */
@@ -78,4 +90,11 @@ a {
 .footer {
     /* position: relative; */
     z-index: 2;
+}
+
+/* Fix for mobile rendering */
+@media (max-width: 768px) {
+    .bg-stars-canvas {
+        opacity: 0.9;
+    }
 }

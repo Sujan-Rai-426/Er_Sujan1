@@ -70,7 +70,7 @@ const Home_Experience = () => {
                 <div className="experience-grid">
 {/*********************** Work Experience Column ***********************/}
                     <div className="exp-column">
-                        <Reveal direction="left" delay="0.2s">
+                        <Reveal direction="left" delay="0.11s">
                             <div className="exp-header">
                                 <FaBriefcase className="header-icon" />
                                 <h3>Work Experience</h3>
@@ -78,7 +78,7 @@ const Home_Experience = () => {
                         </Reveal>
                         <div className="timeline">
                             {experienceData.experiences.map((exp, idx) => (
-                                <Reveal key={idx} direction="left" delay={0.2 + idx * 0.1}>
+                                <Reveal key={idx} direction="left" delay={0.12 + idx * 0.1}>
                                     <div className="timeline-card">
                                         <div className="timeline-dot"></div>
                                         <div className="timeline-content">
@@ -108,7 +108,7 @@ const Home_Experience = () => {
 
 {/*********************** Education Column ***********************/}
                     <div className="edu-column">
-                        <Reveal direction="right" delay="0.2s">
+                        <Reveal direction="right" delay="0.12s">
                             <div className="exp-header">
                                 <FaGraduationCap className="header-icon" />
                                 <h3>Education</h3>
@@ -116,7 +116,7 @@ const Home_Experience = () => {
                         </Reveal>
                         <div className="timeline">
                             {experienceData.education.map((edu, idx) => (
-                                <Reveal key={idx} direction="right" delay={0.2 + idx * 0.1}>
+                                <Reveal key={idx} direction="right" delay={0.12 + idx * 0.1}>
                                     <div className="timeline-card">
                                         <div className="timeline-dot edu-dot"></div>
                                         <div className="timeline-content">

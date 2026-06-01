@@ -179,6 +179,7 @@ body.light .smoky-overlay {
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 1.2rem 1.5rem;
+    margin-right: 0.4rem;
     transition: transform 0.2s;
 }
 
@@ -188,7 +189,7 @@ body.light .smoky-overlay {
 }
 
 .timeline-content h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--text-primary);
@@ -215,6 +216,7 @@ body.light .smoky-overlay {
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
+    font-size: 0.7rem;
 }
 
 .meta-sep {
@@ -222,7 +224,7 @@ body.light .smoky-overlay {
 }
 
 .description {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     color: var(--text-secondary);
     margin-bottom: 0.8rem;
@@ -261,6 +263,11 @@ body.light .smoky-overlay {
 
 /* Responsive */
 @media (max-width: 900px) {
+    .tech-badge {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.65rem;
+        gap: 0.4rem;
+    }
     .experience-grid {
         grid-template-columns: 1fr;
         gap: 2rem;

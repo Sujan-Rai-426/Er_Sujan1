@@ -39,7 +39,7 @@ const Home_About = () => {
                 <div className="about-content">
                     {/* LEFT: Bio + Social */}
                     <div className="about-left">
-                        <Reveal direction="left" delay="0.2s">
+                        <Reveal direction="left" delay="0.12s">
                             <div className="bio-card">
                                 <div className="bio-quote-icon">
                                     <FaQuoteLeft />
@@ -80,7 +80,7 @@ const Home_About = () => {
                             </div>
                         </Reveal>
 
-                        <Reveal direction="left" delay="0.3s">
+                        <Reveal direction="left" delay="0.13s">
                             <div className="social-card">
                                 <h3>Connect with me</h3>
                                 <div className="social-icons">
@@ -103,7 +103,7 @@ const Home_About = () => {
 
                     {/* RIGHT: Resume with half preview + unfold button */}
                     <div className="about-right">
-                        <Reveal direction="right" delay="0.2s">
+                        <Reveal direction="right" delay="0.12s">
                             <div className="resume-card">
                                 <h3>📄 Resume / CV</h3>
                                 <div className={`resume-preview ${isExpanded ? 'expanded' : ''}`}>

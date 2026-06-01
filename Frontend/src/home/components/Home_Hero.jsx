@@ -34,11 +34,11 @@ const Home_Hero = () => {
               </p>
           </Reveal>
 
-          <Reveal direction="left" delay="0.2s">
+          <Reveal direction="left" delay="0.11s">
             <h1 className="hero-name">Sujan Rai</h1>
           </Reveal>
 
-          <Reveal direction="left" delay="0.3s">
+          <Reveal direction="left" delay="0.12s">
             <div className="hero-title-wrapper">
               <span className="hero-title-prefix">I am a </span>
               <Typing_Effect
@@ -55,14 +55,14 @@ const Home_Hero = () => {
             </div>
           </Reveal>
 
-          <Reveal direction="left" delay="0.4s">
+          <Reveal direction="left" delay="0.13s">
             <p className="hero-description">
               I build responsive, accessible, and high‑performance web applications.
               Passionate about modern React, beautiful interfaces, and seamless user experiences.
             </p>
           </Reveal>
 
-          <Reveal direction="left" delay="0.5s">
+          <Reveal direction="left" delay="0.14s">
             <div className="hero-buttons">
               <button
                 className="btn btn-primary"
@@ -79,7 +79,7 @@ const Home_Hero = () => {
             </div>
           </Reveal>
 
-          <Reveal direction="left" delay="0.6s">
+          <Reveal direction="left" delay="0.15s">
             <div className="social-links">
               <a href="https://github.com/Sujan-Rai-426" target="_blank" rel="noopener noreferrer">
                 <FaGithub/>
@@ -98,7 +98,7 @@ const Home_Hero = () => {
         </div>
 
         {/* RIGHT AVATAR WITH REVEAL */}
-        <Reveal direction="right" delay="0.3s">
+        <Reveal direction="right" delay="0.16s">
           <div className="hero-avatar">
             <div className="avatar-wrapper">
               <img
