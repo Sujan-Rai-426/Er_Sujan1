@@ -6,7 +6,7 @@ import { Home_Route } from './home/Home_Import';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BgStars from './utils/BgStars';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     // Load saved theme or default to 'system'
