@@ -97,7 +97,7 @@ const Home_Hero = () => {
           </Reveal>
         </div>
 
-        {/* RIGHT AVATAR WITH REVEAL */}
+        {/* RIGHT AVATAR WITH RIPPLE EFFECT */}
         <Reveal direction="right" delay="0.16s">
           <div className="hero-avatar">
             <div className="avatar-wrapper">
@@ -108,6 +108,10 @@ const Home_Hero = () => {
                 onError={(e) => { e.target.src = 'https://via.placeholder.com/400?text=Sujan'; }}
               />
               <div className="avatar-ring"></div>
+              {/* Multiple ripple rings for layered effect */}
+              <div className="ripple-1"></div>
+              {/* <div className="ripple-2"></div>
+              <div className="ripple-3"></div> */}
             </div>
           </div>
         </Reveal>
