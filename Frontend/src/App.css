@@ -17,8 +17,8 @@ body.light {
   --text-secondary: #333333;
   --text-tertiary: #555555;
   --border-color: #e0e0e0;
-  --accent-color: #663bc4;
-  --card-bg: #728FCE;
+  --accent-color: #728FCE;
+  --card-bg: gray;
 }
 
 /* ----- DARK THEME ----- */
