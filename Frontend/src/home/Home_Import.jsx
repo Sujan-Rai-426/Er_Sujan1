@@ -16,6 +16,7 @@ import Home_About from './components/Home_About'
 import Home_Contact from './components/Home_Contact'
 import Home_Experience from './components/Home_Experience'
 import Home_Skill from './components/Home_Skill'
+import Home_Skills from './components/Home_Skills'
 import Home_Project from './components/Home_Project'
 
 export {
@@ -39,4 +40,5 @@ export {
     Home_Experience,
     Home_Project,
     Home_Skill,
+    Home_Skills,
 }

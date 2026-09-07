@@ -14,7 +14,8 @@ body {
 
 /* ----- LIGHT THEME ----- */
 body.light {
-  --bg-color: #ffffff;
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #f8f8f8;
   --text-primary: #111111;
   --text-secondary: #333333;
   --text-tertiary: #555555;
@@ -25,7 +26,8 @@ body.light {
 
 /* ----- DARK THEME ----- */
 body.dark {
-  --bg-color: #0a0a0a;
+  --bg-primary-color: #0a0a0a;
+  --bg-secondary-color: #131313;
   --text-primary: #ffffff;
   --text-secondary: #cccccc;
   --text-tertiary: #aaaaaa;
@@ -36,7 +38,7 @@ body.dark {
 
 /* Global styles */
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-primary-color);
   color: var(--text-primary);
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -1,7 +1,7 @@
 /* src/home/assets/css/Home.css */
 .home-page {
     position: relative;
-    background: var(--bg-color);
+    background: var(--bg-primary-color);
     overflow-x: hidden;
 }
 

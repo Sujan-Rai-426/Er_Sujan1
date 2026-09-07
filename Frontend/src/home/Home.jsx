@@ -8,7 +8,7 @@ import {
     Home_GitContribution, 
     Home_Hero, 
     Home_Project, 
-    Home_Skill,
+    Home_Skills,
 } from './Home_Import';
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
             <Home_About/>
             <Home_GitContribution />
             <Home_Experience/>
-            <Home_Skill/>
+            <Home_Skills/>
             <Home_Project/>
             <Home_Contact/>
         </div>

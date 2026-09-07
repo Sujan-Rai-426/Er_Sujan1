@@ -57,7 +57,7 @@
     background: linear-gradient(to bottom, 
         transparent 0%, 
         rgba(0, 0, 0, 0.4) 50%,
-        var(--bg-color) 100%
+        var(--bg-primary-color) 100%
     );
     pointer-events: none;
     margin-top: -80px;
@@ -70,7 +70,7 @@ body.dark .smoky-overlay {
     background: linear-gradient(to bottom, 
         transparent 0%, 
         rgba(0, 0, 0, 0.6) 50%,
-        var(--bg-color) 100%
+        var(--bg-primary-color) 100%
     );
 }
 
@@ -79,7 +79,7 @@ body.light .smoky-overlay {
     background: linear-gradient(to bottom, 
         transparent 0%, 
         rgba(0, 0, 0, 0.1) 50%,
-        var(--bg-color) 100%
+        var(--bg-primary-color) 100%
     );
 }
 

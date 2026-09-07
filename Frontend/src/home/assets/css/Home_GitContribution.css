@@ -124,7 +124,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: var(--bg-color);
+    background: var(--bg-primary-color);
     padding: 0.3rem 0.8rem;
     border-radius: 50px;
     border: 1px solid var(--border-color);
