@@ -92,7 +92,7 @@
 
 /* ===== SKILL CARD - EQUAL HEIGHT ===== */
 .skill-card {
-    background: var(--bg-secondary-color);
+    background: rgba(0, 0, 0, 0.041);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.06);
