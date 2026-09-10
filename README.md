@@ -12,7 +12,7 @@
   </a>
 </p>
 
-<h1 align="center"> <b> Er.Sujan Rai </b> </h1>
+<h1 align="center"> <b> Er. Sujan Rai </b> </h1>
 
 <p align="center"> 
     Full stack web developer. 
