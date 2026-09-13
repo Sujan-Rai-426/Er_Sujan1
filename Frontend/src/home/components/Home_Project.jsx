@@ -98,6 +98,16 @@ const projectsData = {
             tech: ["React JS", "github", "DRF", "JavaScript", "MySQL", "django", "cpanel"],
             liveLink: "https://lms.infivitylabs.com",
             githubLink: "https://github.com/INFIVITY"
+        },
+        {
+            id: 9,
+            title: "HTML PRIME",
+            category: ["html"],
+            image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1789295332/HTML_PRIME_y73pmo.png",
+            description: "HTML Project and practice website for student.",
+            tech: ["HTML", "CSS", "JavaScript", "Vercel", "git"],
+            liveLink: "https://html-prime.vercel.app",
+            githubLink: "https://github.com/CodeNepal2027/HTML_PRIME"
         }
     ]
 };
