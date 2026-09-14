@@ -106,7 +106,7 @@ const projectsData = {
             image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1789295332/HTML_PRIME_y73pmo.png",
             description: "HTML Project and practice website for student. If you want your idea to share you are also welcome to contribute in our project",
             tech: ["HTML", "CSS", "JavaScript", "Vercel", "git"],
-            liveLink: "https://html-prime.vercel.app",
+            liveLink: "https://htmlhero.vercel.app",
             githubLink: "https://github.com/CodeNepal2027/HTML_PRIME"
         }
     ]
