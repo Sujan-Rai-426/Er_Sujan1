@@ -101,7 +101,7 @@ const projectsData = {
         },
         {
             id: 9,
-            title: "HTML PRIME",
+            title: "HTML HERO",
             category: ["html"],
             image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1789295332/HTML_PRIME_y73pmo.png",
             description: "HTML Project and practice website for student. If you want your idea to share you are also welcome to contribute in our project",
