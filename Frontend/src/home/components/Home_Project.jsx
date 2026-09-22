@@ -107,7 +107,17 @@ const projectsData = {
             description: "HTML Project and practice website for student. If you want your idea to share you are also welcome to contribute in our project",
             tech: ["HTML", "CSS", "JavaScript", "Vercel", "git"],
             liveLink: "https://htmlhero.vercel.app",
-            githubLink: "https://github.com/CodeNepal2027/HTML_PRIME"
+            githubLink: "https://github.com/CodeNepal2027/HTML_HERO"
+        },
+        {
+            id: 10,
+            title: "CSS HERO",
+            category: ["css"],
+            image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1790074154/CSS_HERO_aswcsd.png",
+            description: "CSS Project and practice website for student. If you want your idea to share you are also welcome to contribute in our project",
+            tech: ["HTML", "CSS", "JavaScript", "Vercel", "git"],
+            liveLink: "https://csshero.vercel.app",
+            githubLink: "https://github.com/CodeNepal2027/CSS_HERO"
         }
     ]
 };
