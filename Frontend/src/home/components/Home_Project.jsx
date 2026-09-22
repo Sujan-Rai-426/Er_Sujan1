@@ -118,6 +118,16 @@ const projectsData = {
             tech: ["HTML", "CSS", "JavaScript", "Vercel", "git"],
             liveLink: "https://csshero.vercel.app",
             githubLink: "https://github.com/CodeNepal2027/CSS_HERO"
+        },
+        {
+            id: 11,
+            title: "Esport TEAMs [ SAAS ]",
+            category: ["SAAS"],
+            image: "https://res.cloudinary.com/dusqlukhy/image/upload/v1790082685/Esport_TEAM_dvs0xa.png",
+            description: "Esport Website SAAS project. Same repo can be used for multiple websites with different org data. [Master db, Tenant db]. Visit all: https://t2kesports.vercel.app, https://drsesports.vercel.app, etc",
+            tech: ["HTML", "CSS", "JavaScript", "Vercel", "git"],
+            liveLink: "https://optechesports.vercel.app/",
+            githubLink: "https://github.com/CodeNepal2027"
         }
     ]
 };
